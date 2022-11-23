@@ -1,0 +1,146 @@
+:root{
+	--white-text:#fff;
+	--background:#c8e8f1;
+	--black-text:rgb(68, 66, 66)	
+	--prueba: (180deg,#21c8f6,#637bff);
+}
+.header{
+	width: auto;
+	height: auto;
+	background: linear-gradient(180deg,#21c8f6,#637bff);
+	text-align: center;
+	color: var(--white-text);
+}
+h1{
+	padding: 10px 0;
+}
+.background1-left-column{
+	background: linear-gradient(180deg,#21c8f6,#637bff);
+}
+
+.background2-left-column{
+	background: linear-gradient(180deg ,#6edcc4,#1aab8b);
+}
+.background3-left-column{
+	background: linear-gradient(180deg ,#f17575,#ab1a1a);
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	border: none;
+}
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+	background-color:var(--white-text);
+	border-radius: 1rem;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+	display: flex;	
+	margin: 1.5rem;
+	overflow: hidden;
+	width: 30rem;
+	height: auto;;
+}
+
+.card h6 {
+	opacity: 0.6;	
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}
+
+.card  h2 {
+	letter-spacing: .1rem;
+	margin: 1rem 0;
+	color: var(black-text);
+}
+
+.left-column {	
+	color: var(--white-text);
+	padding: 30px;
+	max-width: 10rem;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-column h2{
+	color: var(--white-text);
+	text-align: center;
+}
+
+.left-column i {
+	font-size: 2.5rem
+}
+
+.right-column {
+	padding: 30px;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+	
+}
+
+.right-column p{	
+	font-size: .9rem;
+	color: var(--black-text)
+}
+
+.button {
+	border-radius: 3rem;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: var(--white-text);
+	font-size: 1.2rem;
+	padding: .8rem 1.5rem;
+	letter-spacing: .1rem;
+	align-self: flex-end;
+	
+}
+.link{
+	text-decoration: none;
+	color: #1aab8b;
+}
+
+
+/*media queries*/
+
+@media (max-width: 1030px) {
+	.container{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height:auto;
+	}
+  }
+  @media (max-width: 700px) {
+	.container{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height:auto;
+	}
+    .card{
+        width: auto;
+        height: auto;
+        margin-right: 20px;
+    }
+    
+  }
