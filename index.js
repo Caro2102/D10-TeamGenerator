@@ -49,7 +49,10 @@ const confirmuser=(user)=>{
     return true;
   }
 }
-    
+const confirmschool=(school)=>{
+  return !school.match(nameval)||school==''?'Ingrese su escuela': true
+
+}  
 //Formulario Manager, al finalizar se crea un nuevo objeto
  init=()=> {
       return inquirer
@@ -179,6 +182,7 @@ const confirmuser=(user)=>{
             type: 'input',
             message: 'Ingrese la escuela del pasante.',
             name: 'school',
+            validate: confirmschool,
           },
       ]).then(answer => {
         const intern= new Intern(answer.name, answer.id, answer.email, answer.school)
